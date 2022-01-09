@@ -1,0 +1,24 @@
+:root {
+  /* colors */
+  --primary_color: rgb(254, 182, 191);
+  --secendary_color: rgb(94, 97, 100);
+  --acent_color: rgb(28, 125, 221);
+  --liniar_color: linear-gradient(
+    187.22deg,
+    rgba(254, 182, 191, 0.83) -1.24%,
+    rgba(255, 255, 255, 0.1079) 150.57%
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Italiana", serif;
+}
