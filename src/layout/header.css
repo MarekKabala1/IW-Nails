@@ -1,0 +1,15 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 1.4rem;
+  background: var(--liniar_color);
+}
+.company-name img {
+  height: 3rem;
+  width: 6rem;
+}
+.logo img {
+  height: 4rem;
+}

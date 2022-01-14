@@ -1,0 +1,26 @@
+{
+  "name": "iw-nailsweb",
+  "version": "1.0.0",
+  "description": "Domein name \"www.iw-nails.co.uk\"",
+  "main": "index.js",
+  "scripts": {
+    "postcss:watch": "postcss src/style.css --dir dist --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarekKabala1/IW-Nails.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarekKabala1/IW-Nails/issues"
+  },
+  "homepage": "https://github.com/MarekKabala1/IW-Nails#readme",
+  "devDependencies": {
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.2.3"
+  }
+}
