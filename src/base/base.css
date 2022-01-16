@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -5,4 +11,12 @@ h1,
 h2,
 h3 {
   font-family: "Italiana", serif;
+  font-weight: bold;
+  color: var(--secendary_color);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
 }

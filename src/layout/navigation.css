@@ -1,3 +1,4 @@
+/* mobile */
 .hamburger-menu div {
   height: 2px;
   width: 25px;
@@ -5,4 +6,19 @@
 }
 .line-middel {
   margin: 5px 0;
+}
 
+.main-nav_wrapper {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+  background: var(--liniar_color);
+  min-height: 380px;
+  min-width: 50%;
+}

@@ -1,0 +1,18 @@
+.section-one {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  min-height: 380px;
+  background-image: url(../img&svg/pinkNails.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+.section-one_text {
+  letter-spacing: 0.2rem;
+  padding-left: var(--base_padding);
+}
