@@ -160,6 +160,12 @@ li {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+nav {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
 /* mobile */
 .main-header {
   height: 3rem;
@@ -209,7 +215,7 @@ li {
           align-items: center;
   min-width: 100%;
   min-height: 380px;
-  background-image: url(/src/img&svg/pinkNails.jpeg);
+  background-image: url(/img&svg/pinkNails.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
