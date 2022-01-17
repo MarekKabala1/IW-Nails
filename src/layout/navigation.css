@@ -12,6 +12,7 @@
 }
 
 /* making X from the hamburger nav lines */
+/* ####################NAV############################## */
 .active .line-top {
   transform: rotate(-45deg) translate(-11px, -2px);
 }
@@ -41,7 +42,7 @@
   top: -0.5px;
   transform: rotate(45deg);
 }
-/* ##############NAV#################### */
+/* ######################NAV########################## */
 .main-nav_wrapper {
   position: absolute;
   top: 3rem;
