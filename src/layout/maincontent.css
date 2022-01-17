@@ -6,7 +6,7 @@
   align-items: center;
   min-width: 100%;
   min-height: 380px;
-  background-image: url(/img&svg/pinkNails.jpeg);
+  background-image: url("/img&svg/pinkNails.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

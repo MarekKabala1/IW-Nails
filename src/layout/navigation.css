@@ -1,4 +1,4 @@
-/* mobile */
+/* ## mobile ## */
 .hamburger-menu div {
   height: 2.5px;
   width: 25px;
@@ -10,12 +10,8 @@
   margin: 5px 0;
   position: relative;
 }
-/* .line-top {
-  transform: rotate(-45deg) translate(-9px);
-}
-.line-bottom {
-  transform: rotate(45deg) translate(-9px);
-} */
+
+/* making X from the hamburger nav lines */
 .active .line-top {
   transform: rotate(-45deg) translate(-11px, -2px);
 }
@@ -45,6 +41,7 @@
   top: -0.5px;
   transform: rotate(45deg);
 }
+/* ##############NAV#################### */
 .main-nav_wrapper {
   position: absolute;
   top: 3rem;
