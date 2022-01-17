@@ -5,4 +5,5 @@ const navWrapper = document.querySelector("#nav-wrapper");
 
 hamburgerWrapper.addEventListener("click", () => {
   navWrapper.classList.toggle("nav-active");
+  hamburgerWrapper.classList.toggle("active");
 });

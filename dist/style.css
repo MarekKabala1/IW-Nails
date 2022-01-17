@@ -97,6 +97,7 @@ select {
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -114,13 +115,58 @@ li {
 }
 /* mobile */
 .hamburger-menu div {
-  height: 2px;
+  height: 2.5px;
   width: 25px;
   background: black;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .line-middel {
   margin: 5px 0;
+  position: relative;
+}
+/* .line-top {
+  transform: rotate(-45deg) translate(-9px);
+}
+.line-bottom {
+  transform: rotate(45deg) translate(-9px);
+} */
+.active .line-top {
+  -webkit-transform: rotate(-45deg) translate(-11px, -2px);
+          transform: rotate(-45deg) translate(-11px, -2px);
+}
+.active .line-bottom {
+  -webkit-transform: rotate(45deg) translate(-11px);
+          transform: rotate(45deg) translate(-11px);
+}
+.active .line-middel {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+}
+.active .line-middel::before {
+  content: "";
+  height: 8px;
+  width: 3px;
+  background: black;
+  position: absolute;
+  left: 21px;
+  top: -5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.active .line-middel::after {
+  content: "";
+  height: 8px;
+  width: 3px;
+  background: black;
+  position: absolute;
+  left: 21px;
+  top: -0.5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .main-nav_wrapper {
   position: absolute;
@@ -159,12 +205,6 @@ li {
 .nav-active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-nav {
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
 }
 /* mobile */
 .main-header {
