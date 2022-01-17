@@ -117,6 +117,7 @@ li {
   height: 2px;
   width: 25px;
   background: black;
+  cursor: pointer;
 }
 .line-middel {
   margin: 5px 0;
@@ -147,6 +148,17 @@ li {
   background: var(--liniar_color);
   min-height: 380px;
   min-width: 50%;
+  cursor: pointer;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.nav-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /* mobile */
 .main-header {
@@ -178,6 +190,7 @@ li {
 }
 .logo img {
   height: 3rem;
+  margin-right: 2rem;
 }
 .section-one {
   position: relative;
