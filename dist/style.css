@@ -128,6 +128,10 @@ li {
   margin: 5px 0;
   position: relative;
 }
+.hamburger-menu {
+  position: fixed;
+  right: 2rem;
+}
 /* making X from the hamburger nav lines */
 /* ####################NAV############################## */
 .active .line-top {
@@ -177,12 +181,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  align-items: center;
   background: linear-gradient(
     187.22deg,
     rgba(254, 182, 191, 0.83) -1.24%,
@@ -205,6 +206,7 @@ li {
 }
 /* mobile */
 .main-header {
+  position: relative;
   height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,13 +215,11 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.1rem 1.4rem;
+  padding: 0.1rem 1.7rem;
   background: linear-gradient(
     187.22deg,
     rgba(254, 182, 191, 0.83) -1.24%,
@@ -252,8 +252,8 @@ li {
           align-items: center;
   min-width: 100%;
   min-height: 380px;
-  background-image: url("/img&svg/pinkNails.jpeg");
-  background-position: center;
+  background-image: url("/img&svg/section-one-lightpink.jpeg");
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: right;
@@ -262,4 +262,40 @@ li {
   letter-spacing: 0.2rem;
   padding-left: 1rem;
   padding-left: var(--base_padding);
+}
+.section-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100%;
+}
+.section-two_title {
+  margin: 2rem auto;
+  letter-spacing: 0.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.section-two_title::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: rgb(28, 125, 221);
+  background: var(--acent_color);
+  bottom: 0;
+  left: 0;
+}
+.secton-two_txt {
+  font-size: 14px;
+  width: 80%;
 }

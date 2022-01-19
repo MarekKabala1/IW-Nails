@@ -10,6 +10,10 @@
   margin: 5px 0;
   position: relative;
 }
+.hamburger-menu {
+  position: fixed;
+  right: 2rem;
+}
 
 /* making X from the hamburger nav lines */
 /* ####################NAV############################## */
@@ -50,8 +54,6 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   align-items: center;
   background: var(--liniar_color);
   min-height: 380px;
