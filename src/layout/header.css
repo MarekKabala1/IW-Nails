@@ -1,6 +1,7 @@
 /* mobile */
 .main-header {
   position: relative;
+overflow-x: hidden;
   height: 3rem;
   display: flex;
   flex-direction: row;
