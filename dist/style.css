@@ -190,7 +190,7 @@ li {
 }
 /* ######################NAV########################## */
 .main-nav_wrapper {
-  position: absolute;
+  position: fixed;
   top: 3rem;
   right: 0;
   z-index: 1;
