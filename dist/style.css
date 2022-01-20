@@ -191,9 +191,7 @@ li {
 /* ######################NAV########################## */
 .main-nav_wrapper {
   position: fixed;
-  top: 3rem;
   right: 0;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +235,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
