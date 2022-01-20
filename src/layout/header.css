@@ -1,20 +1,22 @@
 /* mobile */
 .main-header {
   position: relative;
-overflow-x: hidden;
-  height: 3rem;
+  overflow: hidden;
+  height: 3.1rem;
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 1rem;
   align-items: center;
-  padding: 0.1rem 1.7rem;
+  justify-content: flex-start;
+  padding: 1rem;
   background: var(--liniar_color);
 }
 .company-name img {
   height: 3.5rem;
   width: 6rem;
 }
+
 .logo img {
   height: 3rem;
-  margin-right: 2rem;
+  margin: 0.3rem 0;
 }

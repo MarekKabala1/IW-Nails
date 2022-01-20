@@ -13,6 +13,7 @@
 .hamburger-menu {
   position: fixed;
   right: 2rem;
+  z-index: 99999;
 }
 
 /* making X from the hamburger nav lines */

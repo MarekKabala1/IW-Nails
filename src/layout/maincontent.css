@@ -6,7 +6,7 @@
   align-items: center;
   min-width: 100%;
   min-height: 380px;
-  background-image: url("/img&svg/section-one-lightpink.jpeg");
+  background-image: url(../img&svg/section-one-lightpink.jpeg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,20 +16,11 @@
   letter-spacing: 0.2rem;
   padding-left: var(--base_padding);
 }
-.section-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
+.secton-two_txt {
+  font-size: 14px;
+  width: 80%;
 }
-.section-two_title {
-  margin: 2rem auto;
-  letter-spacing: 0.5rem;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-.section-two_title::after {
+.section-underline::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -38,7 +29,13 @@
   bottom: 0;
   left: 0;
 }
-.secton-two_txt {
-  font-size: 14px;
-  width: 80%;
+.section-two_title,
+.section-three_title {
+  margin: 2rem auto;
+  letter-spacing: 0.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.section-three_servic > .li-points::before {
+  content: url(../img&svg/nail-brush1.svg);
 }
