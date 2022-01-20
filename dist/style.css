@@ -191,6 +191,7 @@ li {
 /* ######################NAV########################## */
 .main-nav_wrapper {
   position: fixed;
+  top:3rem;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
