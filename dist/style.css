@@ -282,6 +282,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: right;
+  z-index:1;
 }
 .section-one_text {
   letter-spacing: 0.2rem;
