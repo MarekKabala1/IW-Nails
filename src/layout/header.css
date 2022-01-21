@@ -5,10 +5,10 @@
   height: 3.1rem;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 4.5rem;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 0 1rem;
   background: var(--liniar_color);
 }
 .company-name img {

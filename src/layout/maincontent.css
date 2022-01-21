@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: right;
-  z-index :-1 ;
+  z-index: -1;
 }
 .section-one_text {
   letter-spacing: 0.2rem;
@@ -38,5 +38,13 @@
   padding-bottom: 0.5rem;
 }
 .section-three_servic > .li-points::before {
-  content: url(../img&svg/nail-brush1.svg);
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 2rem;
+  padding: var(--base_padding) calc(var(--base_padding) * 3);
+  background-size: 2rem 2rem;
+  background-image: url(../img&svg/nail-brush1.svg);
+  background-repeat: no-repeat;
 }
