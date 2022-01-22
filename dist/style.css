@@ -289,7 +289,7 @@ li {
 }
 .main-conteiner {
   position: relative;
-  background: rgba(255, 255, 255, 0.8) url(../img&svg/nail-background.jpeg);
+  background: rgba(255, 255, 255, 0.9) url(../img&svg/nail-background.jpeg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
