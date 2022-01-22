@@ -58,7 +58,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--base_padding) * 5);
-  background: var(--liniar_color);
+  background: var(--liniar_color-nav);
+  opacity: 1;
   min-height: 100%;
   min-width: 50%;
   cursor: pointer;

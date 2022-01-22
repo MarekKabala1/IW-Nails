@@ -8,6 +8,11 @@
     rgba(254, 182, 191, 0.83) -1.24%,
     rgba(255, 255, 255, 0.1079) 150.57%
   );
+  --liniar_color-nav: linear-gradient(
+    187.22deg,
+    rgba(254, 182, 191, 0.9) -1.24%,
+    rgba(255, 255, 255, 0.7) 150.57%
+  );
   --overlay_color: rgb(255, 255, 255);
   /* spaces */
   --base_padding: 1rem;

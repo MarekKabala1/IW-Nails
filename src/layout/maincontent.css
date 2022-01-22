@@ -1,3 +1,12 @@
+.main-conteiner {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8) url(../img&svg/nail-background.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: lighten;
+  z-index: -5;
+}
 .section-one {
   position: relative;
   display: flex;
@@ -21,7 +30,7 @@
   font-size: 14px;
   width: 80%;
 }
-.section-underline::after {
+.section-underline_title::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -30,21 +39,48 @@
   bottom: 0;
   left: 0;
 }
-.section-two_title,
-.section-three_title {
+.section-underline_title {
   margin: 2rem auto;
   letter-spacing: 0.5rem;
   position: relative;
   padding-bottom: 0.5rem;
 }
-.section-three_servic > .li-points::before {
+.section-three_li {
+  font-size: 1.2rem;
+}
+.section-three_servic > .section-three_li::before {
   content: "";
   display: inline-block;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   margin-top: 2rem;
   padding: var(--base_padding) calc(var(--base_padding) * 3);
-  background-size: 2rem 2rem;
+  background-size: 3rem 3rem;
   background-image: url(../img&svg/nail-brush1.svg);
   background-repeat: no-repeat;
+}
+.section-four_gallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 200px);
+  gap: calc(var(--base_padding) * 3);
+  overflow-x: scroll;
+}
+.section-four_photo {
+  height: 250px;
+  border: 1px solid var(--primary_color);
+  scroll-snap-align: center;
+}
+.section-four_photo > img {
+  height: 100%;
+  width: 100%;
+}
+.section-four_photo:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.section-four_photo:nth-child(4) {
+  object-fit: cover;
 }
