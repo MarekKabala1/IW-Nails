@@ -70,7 +70,7 @@
   display: flex;
   white-space: nowrap;
   gap: calc(var(--base_padding) * 3);
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .section-four_photo {
   height: 250px;
