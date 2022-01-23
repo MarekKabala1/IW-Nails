@@ -77,9 +77,10 @@ select {
 }
 :root {
   /* colors */
-  --primary_color: rgb(254, 182, 191);
+  --primary_color: rgb(245, 245, 245);
   --secendary_color: rgb(94, 97, 100);
-  --acent_color: rgb(28, 125, 221);
+  --acent_color: rgb(0, 104, 193);
+  --nav-border_color: rgba(137, 1, 75, 0.9);
   --liniar_color: linear-gradient(
     187.22deg,
     rgba(254, 182, 191, 0.83) -1.24%,
@@ -154,7 +155,22 @@ li {
 }
 .hamburger-menu {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   right: 2rem;
+  width: 35px;
+  height: 25px;
   z-index: 99999;
 }
 /* making X from the hamburger nav lines */
@@ -214,12 +230,8 @@ li {
           justify-content: center;
   gap: calc(1rem * 5);
   gap: calc(var(--base_padding) * 5);
-  background: linear-gradient(
-    187.22deg,
-    rgba(254, 182, 191, 0.9) -1.24%,
-    rgba(255, 255, 255, 0.7) 150.57%
-  );
-  background: var(--liniar_color-nav);
+  background: rgba(137, 1, 75, 0.9);
+  background: var(--nav-border_color);
   opacity: 1;
   min-height: 100%;
   min-width: 50%;
@@ -236,15 +248,15 @@ li {
           transform: translateX(0);
 }
 .main-nav_wrapper > li > a {
-  color: rgb(94, 97, 100);
-  color: var(--secendary_color);
+  color: rgb(245, 245, 245);
+  color: var(--primary_color);
 }
 .main-nav_wrapper > li > a:hover {
-  color: rgb(28, 125, 221);
+  color: rgb(0, 104, 193);
   color: var(--acent_color);
 }
 .main-nav_wrapper > li > a:focus {
-  color: rgb(28, 125, 221);
+  color: rgb(0, 104, 193);
   color: var(--acent_color);
   outline: none;
 }
@@ -255,8 +267,7 @@ li {
 /* mobile */
 .main-header {
   position: relative;
-  overflow: hidden;
-  height: 3.1rem;
+  height: 3.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,13 +282,11 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* padding: 0 1rem; */
-  background: linear-gradient(
-    187.22deg,
-    rgba(254, 182, 191, 0.83) -1.24%,
-    rgba(255, 255, 255, 0.1079) 150.57%
-  );
-  background: var(--liniar_color);
+  padding: 0.5rem;
+  background: rgb(245, 245, 245);
+  background: var(--primary_color);
+  /* border: 0.5px solid var(--nav-border_color); */
+  border-radius: 2px;
 }
 .company-name img {
   height: 3.5rem;
@@ -285,7 +294,7 @@ li {
 }
 .logo img {
   height: 3rem;
-  margin: 0.3rem auto;
+  padding: 0.3rem auto;
 }
 .main-conteiner {
   position: relative;
@@ -319,6 +328,8 @@ li {
   background-size: cover;
   opacity: 1;
   z-index: -1;
+  -webkit-box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
+          box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
 }
 .section-one_text {
   letter-spacing: 0.2rem;
@@ -335,7 +346,7 @@ li {
   content: "";
   height: 2px;
   width: 100%;
-  background: rgb(28, 125, 221);
+  background: rgb(0, 104, 193);
   background: var(--acent_color);
   bottom: 0;
   left: 0;
@@ -350,22 +361,40 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
+  margin-bottom: 2rem;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  -webkit-perspective-origin: 50%;
+          perspective-origin: 50%;
 }
 .section-three_li {
-  font-size: 1.2rem;
-  position: relative;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(137, 1, 75, 0.5);
+  border-radius: 50%;
+  padding: 0 4rem 1rem 0;
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+  -webkit-box-shadow: -2px 15px 7px 5px rgba(0, 0, 0, 0.2),
+    inset 0px 0px 1px 2px rgba(137, 1, 75, 0.2);
+          box-shadow: -2px 15px 7px 5px rgba(0, 0, 0, 0.2),
+    inset 0px 0px 1px 2px rgba(137, 1, 75, 0.2);
 }
 .section-three_servic > .section-three_li::before {
   content: "";
   display: inline-block;
-  height: 3rem;
-  width: 3rem;
-  /* margin-top: 2rem; */
+  height: 4rem;
+  width: 4rem;
+  margin: -0.7rem 1rem;
   padding: 1rem 1rem;
   padding: 1rem var(--base_padding);
-  background-size: 3rem 3rem;
+  background-size: 4rem 4rem;
   background-image: url(../img&svg/nail-brush1.svg);
   background-repeat: no-repeat;
 }
@@ -382,7 +411,7 @@ li {
 .section-four_photo {
   height: 250px;
   width: 200px;
-  border: 1px solid rgb(254, 182, 191);
+  border: 1px solid rgb(245, 245, 245);
   border: 1px solid var(--primary_color);
 }
 .section-four_photo > img {

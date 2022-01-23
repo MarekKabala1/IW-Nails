@@ -1,8 +1,9 @@
 :root {
   /* colors */
-  --primary_color: rgb(254, 182, 191);
+  --primary_color: rgb(245, 245, 245);
   --secendary_color: rgb(94, 97, 100);
-  --acent_color: rgb(28, 125, 221);
+  --acent_color: rgb(0, 104, 193);
+  --nav-border_color: rgba(137, 1, 75, 0.9);
   --liniar_color: linear-gradient(
     187.22deg,
     rgba(254, 182, 191, 0.83) -1.24%,
