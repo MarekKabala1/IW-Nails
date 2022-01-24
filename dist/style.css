@@ -94,6 +94,7 @@ select {
   --overlay_color: rgb(255, 255, 255);
   /* spaces */
   --base_padding: 1rem;
+  /* screen sizes */
 }
 *,
 *::before,
@@ -368,30 +369,33 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
   padding-top: 1rem;
   padding-top: var(--base_padding);
 }
 .section-three_li {
-  font-size: 1.4rem;
-  padding: 0 calc(1rem * 4) 1rem 0;
-  padding: 0 calc(var(--base_padding) * 4) var(--base_padding) 0;
+  font-size: 1.3rem;
+  padding: 0 calc(1rem * 2) 1rem 0;
+  padding: 0 calc(var(--base_padding) * 2) var(--base_padding) 0;
 }
-.section-three_servic > .section-three_li::before {
+@media (--small-viewport) {
+  .section-three_li {
+    padding: 0 1rem 1rem 0;
+    padding: 0 var(--base_padding) var(--base_padding) 0;
+  }
+}
+.section-three_li::before {
   content: "";
   display: inline-block;
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   margin: -0.7rem 1rem;
   padding: 1rem;
   padding: var(--base_padding);
-  background-size: 4rem 4rem;
+  background-size: 2rem 2rem;
   background-image: url(../img&svg/nail-brush1.svg);
   background-repeat: no-repeat;
 }
@@ -426,4 +430,28 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 200px;
+}
+.section-five_flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.section-five-subtitle_conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.section-five-subtitle_text {
+  font-size: 0.8rem;
 }
