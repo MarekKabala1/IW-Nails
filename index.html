@@ -14,7 +14,7 @@
     <title>IW-Nails</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header flex-row">
       <div class="company-name">
         <img src="img&svg/nails-logo-name1.svg" alt="iW-nails company-name" />
       </div>
@@ -26,7 +26,7 @@
         <div class="line-middel"></div>
         <div class="line-bottom"></div>
       </div>
-      <nav class="main-nav_wrapper" id="nav-wrapper">
+      <nav class="main-nav_wrapper flex-column" id="nav-wrapper">
         <li><a href="#">My Services</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Prices</a></li>
@@ -35,11 +35,11 @@
       </nav>
     </header>
     <main class="main-conteiner">
-      <section class="section-one">
+      <section class="section-one flex-row">
         <h2 class="section-one_text">Sit Back,and Relax</h2>
       </section>
       <section class="section-two">
-        <article class="flex">
+        <article class="flex-column">
           <h2 class="section-two_title section-underline_title">
             Watford Nails
           </h2>
@@ -53,7 +53,7 @@
         </article>
       </section>
       <section class="section-three">
-        <article class="flex">
+        <article class="flex-column">
           <h2 class="section-three_title section-underline_title">
             My Services
           </h2>
@@ -70,36 +70,49 @@
         </article>
       </section>
       <section class="section-four">
-        <article class="flex">
+        <article class="flex-column">
           <h2 class="section-four_title section-underline_title">Gallery</h2>
-          <ul class="section-four_gallery">
-            <li class="section-four_photo">
-              <img src="img&svg/nails1.jpeg" alt="Pink Nails" />
-            </li>
-            <li class="section-four_photo">
-              <img src="img&svg/nails4.jpeg" alt="Decoration Nails" />
-            </li>
-            <li class="section-four_photo">
-              <img src="img&svg/nail-background.jpeg" alt="Black Star Nails" />
-            </li>
-            <li class="section-four_photo">
-              <img src="img&svg/nails3.jpeg" alt="Black Star Nails" />
-            </li>
-            <li class="section-four_photo"><a href="#"></a>See More</li>
-          </ul>
+          <div class="section-four_gallery flex-row">
+            <img
+              class="section-four_photo"
+              src="img&svg/nails1.jpeg"
+              alt="Pink Nails"
+            />
+
+            <img
+              class="section-four_photo"
+              src="img&svg/nails4.jpeg"
+              alt="Decoration Nails"
+            />
+
+            <img
+              class="section-four_photo"
+              src="img&svg/nail-background.jpeg"
+              alt="Black Star Nails"
+            />
+
+            <img
+              class="section-four_photo"
+              src="img&svg/nails3.jpeg"
+              alt="Black Star Nails"
+            />
+
+            <div class="section-four_photo flex"><a href="#"></a>See More</div>
+          </div>
         </article>
       </section>
       <section class="section-five">
-        <article class="flex section-five_flex">
+        <article class="section-five-conteiner flex-column">
           <h2 class="section-five_title section-underline_title">Prices</h2>
-          <div class="section-five-subtitle_conteiner"></div>
-            <h3 class="section-five_subtitle section-underline_title">Polish</h3>
+          <h3 class="section-five_subtitle section-underline_title">Polish</h3>
+          <div class="section-five-subtitle_conteiner flex">
             <h3 class="section-five_subtitle">Color Refresh</h3>
-
-            <p class="section-five-subtitle_text">
-              Refresh your nails quick tidy up and colour application.
-            </p>
-            <p class="section-five-subtitle_price">£12</p>
+            <div class="section-five-subtitle-text_conteiner flex-row">
+              <p class="section-five-subtitle_text">
+                Refresh your nails quick tidy up and colour application.
+              </p>
+              <p class="section-five-subtitle_price">£12</p>
+            </div>
           </div>
         </article>
       </section>
