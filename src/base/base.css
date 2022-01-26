@@ -13,10 +13,12 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Italiana", serif;
   font-weight: bold;
   color: var(--secendary_color);
+  letter-spacing: 0.3rem;
 }
 a {
   text-decoration: none;

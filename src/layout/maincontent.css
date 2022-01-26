@@ -4,7 +4,7 @@ article {
   min-width: 100%;
 }
 section {
-  padding-top: calc(var(--base_padding) * 3);
+  margin-top: calc(var(--base_padding) * 2);
 }
 .main-conteiner {
   position: relative;
@@ -29,6 +29,7 @@ section {
   background-size: cover;
   opacity: 1;
   z-index: -1;
+  margin: 0;
   box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
 }
 .section-one_text {
@@ -44,6 +45,10 @@ section {
 }
 
 /* ############################SECTION THREE########################### */
+.section-three {
+  background-color: var(--primary_color);
+  padding-bottom: calc(var(--base_padding) * 2);
+}
 .section-three_servic {
   display: flex;
   flex-direction: row;
@@ -104,6 +109,12 @@ section {
   align-items: center;
   justify-content: center;
   min-width: 100%;
+  background-color: var(--primary_color);
+  padding-bottom: var(--base_padding);
+}
+.section-five-title {
+  margin: 0 auto;
+  text-align: center;
 }
 .section-five-conteiner > .section-underline_title {
   margin: var(--base_padding);

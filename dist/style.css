@@ -111,11 +111,13 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Italiana", serif;
   font-weight: bold;
   color: rgb(94, 97, 100);
   color: var(--secendary_color);
+  letter-spacing: 0.3rem;
 }
 a {
   text-decoration: none;
@@ -309,8 +311,8 @@ article {
   min-width: 100%;
 }
 section {
-  padding-top: calc(1rem * 3);
-  padding-top: calc(var(--base_padding) * 3);
+  margin-top: calc(1rem * 2);
+  margin-top: calc(var(--base_padding) * 2);
 }
 .main-conteiner {
   position: relative;
@@ -338,6 +340,7 @@ section {
   background-size: cover;
   opacity: 1;
   z-index: -1;
+  margin: 0;
   -webkit-box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
           box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
 }
@@ -353,6 +356,12 @@ section {
   width: 80%;
 }
 /* ############################SECTION THREE########################### */
+.section-three {
+  background-color: rgb(245, 245, 245);
+  background-color: var(--primary_color);
+  padding-bottom: calc(1rem * 2);
+  padding-bottom: calc(var(--base_padding) * 2);
+}
 .section-three_servic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +442,14 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 100%;
+  background-color: rgb(245, 245, 245);
+  background-color: var(--primary_color);
+  padding-bottom: 1rem;
+  padding-bottom: var(--base_padding);
+}
+.section-five-title {
+  margin: 0 auto;
+  text-align: center;
 }
 .section-five-conteiner > .section-underline_title {
   margin: 1rem;
