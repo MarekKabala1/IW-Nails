@@ -361,6 +361,9 @@ section {
   background-color: var(--primary_color);
   padding-bottom: calc(1rem * 2);
   padding-bottom: calc(var(--base_padding) * 2);
+  max-width: 95%;
+  border-radius: 5px;
+  margin: 4rem auto 0 auto;
 }
 .section-three_servic {
   display: -webkit-box;
@@ -385,12 +388,13 @@ section {
   padding: 0 calc(1rem * 2) 1rem 0;
   padding: 0 calc(var(--base_padding) * 2) var(--base_padding) 0;
 }
-@media (--small-viewport) {
+/* ######Viewport smaller then 345px####### */
+@media (max-width: 21.5rem) {
   .section-three_li {
-    padding: 0 1rem 1rem 0;
-    padding: 0 var(--base_padding) var(--base_padding) 0;
+    padding: 0 0 1rem 0;
   }
 }
+/* ######################################### */
 .section-three_li::before {
   content: "";
   display: inline-block;
@@ -441,19 +445,28 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 100%;
   background-color: rgb(245, 245, 245);
   background-color: var(--primary_color);
-  padding-bottom: 1rem;
-  padding-bottom: var(--base_padding);
+  padding-bottom: calc(1rem * 2);
+  padding-bottom: calc(var(--base_padding) * 2);
+  max-width: 95%;
+  border-radius: 5px;
+  margin: 4rem auto 0 auto;
+}
+.section-five > article {
+  min-width: 100%;
 }
 .section-five-title {
   margin: 0 auto;
   text-align: center;
 }
-.section-five-conteiner > .section-underline_title {
+.section-five_conteiner > .section-underline_title {
   margin: 1rem;
   margin: var(--base_padding);
+}
+.section-five_conteiner > .section-five_subtitle {
+  padding-left: calc(1rem / 2);
+  padding-left: calc(var(--base_padding) / 2);
 }
 .section-five-subtitle_conteiner {
   -webkit-box-orient: vertical;
@@ -482,3 +495,34 @@ section {
 .section-five-subtitle_text {
   font-size: 0.7rem;
 }
+.section-five-subtitle_price {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+/* #####################################SECTION SIX########################## */
+.section-six_conteiner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2rem 0 2rem;
+  padding-bottom: 1rem;
+  padding-bottom: var(--base_padding);
+}
+.section-six-conteiner_photo {
+  width: 230px;
+  height: 250px;
+  background-color: grey;
+  margin-bottom: calc(1rem * 2);
+  margin-bottom: calc(var(--base_padding) * 2);
+}
+.section-six-conteiner_photo > img {
+  width: 100%;
+  height: 100%;
+}
+.section-six-conteiner_text {
+  font-size: 0.9rem;
+}
+/* ########################################################################## */

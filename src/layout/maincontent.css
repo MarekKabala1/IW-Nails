@@ -48,6 +48,9 @@ section {
 .section-three {
   background-color: var(--primary_color);
   padding-bottom: calc(var(--base_padding) * 2);
+  max-width: 95%;
+  border-radius: 5px;
+  margin: 4rem auto 0 auto;
 }
 .section-three_servic {
   display: flex;
@@ -61,11 +64,14 @@ section {
   font-size: 1.3rem;
   padding: 0 calc(var(--base_padding) * 2) var(--base_padding) 0;
 }
-@media (--small-viewport) {
+
+/* ######Viewport smaller then 345px####### */
+@media (max-width: 21.5rem) {
   .section-three_li {
-    padding: 0 var(--base_padding) var(--base_padding) 0;
+    padding: 0 0 1rem 0;
   }
 }
+/* ######################################### */
 .section-three_li::before {
   content: "";
   display: inline-block;
@@ -108,16 +114,24 @@ section {
 .section-five {
   align-items: center;
   justify-content: center;
-  min-width: 100%;
   background-color: var(--primary_color);
-  padding-bottom: var(--base_padding);
+  padding-bottom: calc(var(--base_padding) * 2);
+  max-width: 95%;
+  border-radius: 5px;
+  margin: 4rem auto 0 auto;
+}
+.section-five > article {
+  min-width: 100%;
 }
 .section-five-title {
   margin: 0 auto;
   text-align: center;
 }
-.section-five-conteiner > .section-underline_title {
+.section-five_conteiner > .section-underline_title {
   margin: var(--base_padding);
+}
+.section-five_conteiner > .section-five_subtitle {
+  padding-left: calc(var(--base_padding) / 2);
 }
 .section-five-subtitle_conteiner {
   flex-direction: column;
@@ -134,3 +148,31 @@ section {
 .section-five-subtitle_text {
   font-size: 0.7rem;
 }
+.section-five-subtitle_price {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+/* #####################################SECTION SIX########################## */
+
+.section-six_conteiner {
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+  padding-bottom: var(--base_padding);
+}
+.section-six-conteiner_photo {
+  width: 230px;
+  height: 250px;
+  background-color: grey;
+  margin-bottom: calc(var(--base_padding) * 2);
+}
+.section-six-conteiner_photo > img {
+  width: 100%;
+  height: 100%;
+}
+.section-six-conteiner_text {
+  font-size: 0.9rem;
+}
+
+/* ########################################################################## */
