@@ -175,4 +175,59 @@ section {
   font-size: 0.9rem;
 }
 
-/* ########################################################################## */
+/* ###############################section seven########################################### */
+
+.section-seven {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary_color);
+  padding-bottom: calc(var(--base_padding) * 2);
+  max-width: 95%;
+  border-radius: 5px;
+}
+.section-seven > article {
+  min-width: 100%;
+}
+.section-seven_conteiner {
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+}
+.section-seven_conteiner > p {
+  letter-spacing: 0.3rem;
+}
+
+/* ##############################FOOTER########################################## */
+
+.main-footer {
+  align-items: center;
+  justify-content: center;
+  gap: var(--base_padding);
+  background-color: var(--primary_color);
+  padding-bottom: calc(var(--base_padding) * 2);
+  max-width: 95%;
+  border-radius: 5px;
+}
+.main-footer_socialicon {
+  gap: 2rem;
+}
+.footer-nav_wrapper {
+  gap: 2rem;
+}
+.main-footer_copy {
+  font-size: 0.8rem;
+}
+.footer-nav_wrapper {
+  cursor: pointer;
+}
+.footer-nav_wrapper > li > a {
+  color: var(--nav-border_color);
+  font-size: 0.7rem;
+  border-bottom: 1px solid;
+}
+.footer-nav_wrapper > li:hover {
+  transform: scale(1.1);
+}
+.footer-nav_wrapper > li > a:hover {
+  color: var(--acent_color);
+}

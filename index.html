@@ -27,11 +27,11 @@
         <div class="line-bottom"></div>
       </div>
       <nav class="main-nav_wrapper flex-column" id="nav-wrapper">
-        <li><a href="#">My Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Prices</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#myservice">My Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#price">Prices</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </nav>
     </header>
     <main class="main-conteiner">
@@ -52,7 +52,7 @@
           </p>
         </article>
       </section>
-      <section class="section-three flex">
+      <section class="section-three flex" id="myservice">
         <article class="flex-column">
           <h2 class="section-three_title section-underline_title">My Servic</h2>
           <ul class="section-three_servic">
@@ -67,7 +67,7 @@
           </ul>
         </article>
       </section>
-      <section class="section-four">
+      <section class="section-four" id="gallery">
         <article class="flex-column">
           <h2 class="section-four_title section-underline_title">Gallery</h2>
           <div class="section-four_gallery flex-row">
@@ -99,7 +99,7 @@
           </div>
         </article>
       </section>
-      <section class="section-five">
+      <section class="section-five" id="price">
         <article class="flex-column">
           <h2 class="section-five_title section-underline_title">Prices</h2>
           <div class="section-five_conteiner flex-column">
@@ -191,9 +191,9 @@
           </div>
         </article>
       </section>
-      <section class="section-six flex">
+      <section class="section-six flex" id="about">
         <article class="flex-column">
-          <h2 class="section-three_title section-underline_title">About Me</h2>
+          <h2 class="section-six_title section-underline_title">About Me</h2>
           <div class="section-six_conteiner flex-column">
             <div class="section-six-conteiner_photo">
               <img src="img&svg/aboutMe.jpeg" alt="My Photo" />
@@ -208,6 +208,33 @@
           </div>
         </article>
       </section>
+      <section class="section-seven flex" id="contact">
+        <article class="flex-column">
+          <h2 class="section-seven_title section-underline_title">Contact</h2>
+          <div class="section-seven_conteiner flex-column">
+            <h4 class="section-seven-conteiner_mobile">Mob</h4>
+            <p>07506111321</p>
+            <h4 class="section-seven-conteiner_email">E-mail</h4>
+            <p>info@iw-nails.co.uk</p>
+          </div>
+        </article>
+      </section>
+      <footer class="main-footer flex-column">
+        <div class="main-footer_socialicon  flex-row">
+          <img src="img&svg/facebookBlueO.svg" alt="facebook icon">
+          <img src="/img&svg/instaOpink.svg" alt="instagram icon">
+        </div>
+        <p class="main-footer_copy">
+          &#169 Copy Rights IW-Nails , and MK Disigne
+        </p>
+        <div class="footer-nav_wrapper flex-row">
+          <li><a href="#myservice">My Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#price">Prices</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </footer>
     </main>
     <script src="dist/scrypt.js"></script>
   </body>
