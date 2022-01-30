@@ -224,7 +224,11 @@ iframe {
   justify-content: center;
   gap: var(--base_padding);
   background-color: var(--primary_color);
+<<<<<<< HEAD
   padding: 2rem 0 calc(var(--base_padding) * 2) 0;
+=======
+  padding: var(--base_padding) 0 calc(var(--base_padding) * 2) 0;
+>>>>>>> 8f5d0bc1b948546fd40c0506611466b85b6e4cc0
   max-width: 95%;
   border-radius: 5px;
   margin: 4rem auto 0 auto;
