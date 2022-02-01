@@ -27,7 +27,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
-  z-index: -1;
   margin: 0;
   box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
 }
