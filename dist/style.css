@@ -103,7 +103,7 @@ select {
   padding: 0;
 }
 html {
-  overflow-x: auto;
+  /* overflow-x: auto; */
   scroll-behavior: smooth;
 }
 body {
@@ -294,6 +294,7 @@ li {
   background: var(--primary_color);
   /* border: 0.5px solid var(--nav-border_color); */
   border-radius: 2px;
+  overflow: hidden;
 }
 .company-name img {
   height: 3.5rem;
@@ -323,7 +324,6 @@ section {
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: lighten;
-  z-index: -5;
 }
 /* ###########################SECTION ONE########################### */
 .section-one {
@@ -415,9 +415,11 @@ section {
   gap: calc(var(--base_padding) * 3);
   margin: 1rem;
   margin: var(--base_padding);
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   max-height: 260px;
-  width: auto;
+  width: 300px;
+  white-space: nowrap;
 }
 .section-four_photo {
   height: 250px;
@@ -592,6 +594,10 @@ iframe {
   max-width: 95%;
   border-radius: 5px;
   margin: 4rem auto 0 auto;
+}
+.main-footer_socialicon > img {
+  width: 2.1rem;
+  aspect-ratio: 1;
 }
 .main-footer_socialicon {
   gap: 2rem;

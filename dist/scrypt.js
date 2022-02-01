@@ -14,11 +14,3 @@ document.addEventListener("click", (e) => {
     hamburgerWrapper.classList.remove("active");
   }
 });
-
-const french = document.querySelector(".section-three_french");
-
-french.addEventListener("click", (e) => {
-  // const div = document.createElement("div");
-  // french.appendChild(div);
-  console.log("click", e.target);
-});

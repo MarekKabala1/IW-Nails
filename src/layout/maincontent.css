@@ -13,7 +13,6 @@ section {
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: lighten;
-  z-index: -5;
 }
 
 /* ###########################SECTION ONE########################### */
@@ -89,9 +88,11 @@ section {
 .section-four_gallery {
   gap: calc(var(--base_padding) * 3);
   margin: var(--base_padding);
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   max-height: 260px;
-  width: auto;
+  width: 300px;
+  white-space: nowrap;
 }
 .section-four_photo {
   height: 250px;
@@ -228,6 +229,10 @@ iframe {
   max-width: 95%;
   border-radius: 5px;
   margin: 4rem auto 0 auto;
+}
+.main-footer_socialicon > img {
+  width: 2.1rem;
+  aspect-ratio: 1;
 }
 .main-footer_socialicon {
   gap: 2rem;
