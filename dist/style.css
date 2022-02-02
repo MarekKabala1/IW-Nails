@@ -390,7 +390,7 @@ section {
   padding: 0 calc(var(--base_padding) * 2) var(--base_padding) 0;
 }
 /* ######Viewport smaller then 345px####### */
-@media (max-width: 21.5rem) {
+@media (max-width: 22.5rem) {
   .section-three_li {
     padding: 0 0 1rem 0;
   }
@@ -416,19 +416,19 @@ section {
   margin: var(--base_padding);
   overflow-x: scroll;
   overflow-y: hidden;
-  max-height: 260px;
-  width: 300px;
+  min-height: 260px;
+  max-width: 400px;
   white-space: nowrap;
 }
 .section-four_photo {
   height: 250px;
-  max-width: 200px;
+  min-width: 200px;
   line-height: 110px;
-  border: 1px solid rgb(245, 245, 245);
-  border: 1px solid var(--primary_color);
+  border: 1px solid rgba(137, 1, 75, 0.9);
+  border: 1px solid var(--nav-border_color);
 }
 .section-four_photo > img {
-  height: 100%;
+  height: 95%;
   width: 100%;
 }
 .section-four_photo:last-child {
@@ -438,7 +438,20 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 200px;
+  gap: 2.3rem;
+}
+.section-four_photo > img {
+  height: 2rem;
+  width: 2rem;
+}
+.section-four_photo > a {
+  height: 2rem;
+  width: 2rem;
 }
 /* ##################################SECTION FIVE####################### */
 .section-five {
