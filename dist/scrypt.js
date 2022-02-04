@@ -14,3 +14,26 @@ document.addEventListener("click", (e) => {
     hamburgerWrapper.classList.remove("active");
   }
 });
+
+// My service popup menu
+const popupFrench = document.querySelectorAll(".section-three_li");
+const popupClassic = document.querySelector(".classic-photo");
+const popupPhoto = document.querySelector(".section-three-li_photo");
+
+popupFrench.forEach((popup) => {
+  popup.addEventListener("click", (e) => {
+    e.preventDefault();
+    popupPhoto.style.display = "flex";
+
+    document.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("click", e.target);
+
+      if (e.target === popup) {
+        popupPhoto.style.display = "flex";
+      } else {
+        popupPhoto.style.display = "none";
+      }
+    });
+  });
+});

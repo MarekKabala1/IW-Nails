@@ -365,6 +365,7 @@ section {
   max-width: 95%;
   border-radius: 5px;
   margin: 4rem auto 0 auto;
+  position: relative;
 }
 .section-three_servic {
   display: -webkit-box;
@@ -388,6 +389,24 @@ section {
   font-size: 1.3rem;
   padding: 0 calc(1rem * 2) 1rem 0;
   padding: 0 calc(var(--base_padding) * 2) var(--base_padding) 0;
+}
+.section-three_li > a {
+  pointer-events: none;
+}
+.section-three-li_photo {
+  height: 300px;
+  width: 250px;
+  /* background: blue; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: none;
+}
+.section-three-li_photo > img {
+  width: 100%;
+  height: 100%;
 }
 /* ######Viewport smaller then 345px####### */
 @media (max-width: 22.5rem) {
