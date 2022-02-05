@@ -18,21 +18,26 @@ document.addEventListener("click", (e) => {
 // My service popup menu
 const popupFrench = document.querySelectorAll(".section-three_li");
 const popupClassic = document.querySelector(".classic-photo");
-const popupPhoto = document.querySelector(".section-three-li_photo");
+const popupPhotoDiv = document.querySelector(".section-three-li_photo");
+const mainConteiner = document.querySelector(".main-conteiner");
 
-popupFrench.forEach((popup) => {
+popupFrench.forEach((popup, index, imgArr) => {
   popup.addEventListener("click", (e) => {
     e.preventDefault();
-    popupPhoto.style.display = "flex";
+    let imgArr = [index];
+    //prettier - ignore;
+    popupPhotoDiv.innerHTML = `<img src="img&svg/service${imgArr}.jpeg">`;
 
+    console.log(index, popupPhotoDiv, imgArr);
     document.addEventListener("click", (e) => {
       e.preventDefault();
-      console.log("click", e.target);
+      // console.log("click", e.target);
 
       if (e.target === popup) {
-        popupPhoto.style.display = "flex";
+        popupPhotoDiv.style.display = "flex";
+        popupPhotoDiv.style.animation = "scaleAnimation 400ms ease-in";
       } else {
-        popupPhoto.style.display = "none";
+        popupPhotoDiv.style.display = "none";
       }
     });
   });
