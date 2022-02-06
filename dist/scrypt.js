@@ -21,24 +21,24 @@ const popupClassic = document.querySelector(".classic-photo");
 const popupPhotoDiv = document.querySelector(".section-three-li_photo");
 const mainConteiner = document.querySelector(".main-conteiner");
 
-popupFrench.forEach((popup, index, imgArr) => {
+popupFrench.forEach((popup, index) => {
   popup.addEventListener("click", (e) => {
-    e.preventDefault();
     let imgArr = [index];
-    //prettier - ignore;
-    popupPhotoDiv.innerHTML = `<img src="img&svg/service${imgArr}.jpeg">`;
 
-    console.log(index, popupPhotoDiv, imgArr);
+    // prettier-ignore
+    popupPhotoDiv.innerHTML =
+    `<img src="img&svg/service${imgArr}.jpeg">`;
+
     document.addEventListener("click", (e) => {
-      e.preventDefault();
-      // console.log("click", e.target);
-
       if (e.target === popup) {
         popupPhotoDiv.style.display = "flex";
         popupPhotoDiv.style.animation = "scaleAnimation 400ms ease-in";
       } else {
         popupPhotoDiv.style.display = "none";
+        popupPhotoDiv.style.animation = "";
       }
+      // console.log(e.target);
     });
   });
 });
+// console.log(index, popupPhotoDiv, imgArr);

@@ -41,6 +41,11 @@ section {
   font-size: 14px;
   width: 80%;
 }
+.section-two > article > p::first-letter {
+  color: var(--nav-border_color);
+  font-size: 1.5rem;
+  text-shadow: -5px 2px 3px black;
+}
 
 /* ############################SECTION THREE########################### */
 .section-three {
