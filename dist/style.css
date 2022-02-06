@@ -109,6 +109,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  line-height: 1.8rem;
 }
 h1,
 h2,
@@ -195,6 +196,13 @@ li {
   cursor: pointer;
   z-index: 99999;
 }
+/* ######Viewport smaller then 345px####### */
+@media (max-width: 23rem) {
+  .hamburger-menu {
+    right: 0.7rem;
+  }
+}
+/* ######################################### */
 /* making X from the hamburger nav lines */
 /* ####################NAV############################## */
 .active .line-top {
@@ -298,7 +306,7 @@ li {
 }
 .company-name img {
   height: 3.5rem;
-  width: 6rem;
+  width: 10rem;
 }
 .logo img {
   height: 3rem;
@@ -324,6 +332,9 @@ section {
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: lighten;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 /* ###########################SECTION ONE########################### */
 .section-one {
@@ -356,11 +367,15 @@ section {
   font-size: 14px;
   width: 80%;
 }
+.secton-two_txt > span {
+  font-weight: 700;
+}
 .section-two > article > p::first-letter {
   color: rgba(137, 1, 75, 0.9);
   color: var(--nav-border_color);
-  font-size: 1.5rem;
-  text-shadow: -5px 2px 3px black;
+  font-size: 2rem;
+  text-shadow: -2px 2px 3px black;
+  font-family: "Italiana", serif;
 }
 /* ############################SECTION THREE########################### */
 .section-three {
@@ -377,6 +392,12 @@ section {
   margin: 0 auto;
   padding-top: 1rem;
   padding-top: var(--base_padding);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section-three-servic-li {
   display: grid;
@@ -399,7 +420,8 @@ section {
   top: -30%;
   display: none;
   z-index: 5;
-  /* transform-origin: -25% 50%; */
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 .section-three-li_photo > img {
   width: 100%;
@@ -577,6 +599,13 @@ section {
 .section-six-conteiner_text {
   font-size: 0.9rem;
 }
+.section-six_conteiner > p::first-letter {
+  color: rgba(137, 1, 75, 0.9);
+  color: var(--nav-border_color);
+  font-size: 2rem;
+  text-shadow: -2px 2px 3px black;
+  font-family: "Italiana", serif;
+}
 /* ###############################section seven########################################### */
 .section-seven {
   -webkit-box-align: center;
@@ -654,6 +683,13 @@ iframe {
   gap: 1rem;
 }
 .main-footer_copy {
+  font-size: 0.8rem;
+}
+.footer-contact > p > img {
+  display: inline;
+  padding-right: 1rem;
+}
+.footer-contact > p {
   font-size: 0.8rem;
 }
 .footer-nav_wrapper > li > a {

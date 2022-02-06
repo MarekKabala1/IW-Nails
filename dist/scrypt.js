@@ -33,9 +33,13 @@ popupFrench.forEach((popup, index) => {
       if (e.target === popup) {
         popupPhotoDiv.style.display = "flex";
         popupPhotoDiv.style.animation = "scaleAnimation 400ms ease-in";
+        mainConteiner.classList.remove("main-conteiner");
+        mainConteiner.classList.add("overlay");
       } else {
         popupPhotoDiv.style.display = "none";
         popupPhotoDiv.style.animation = "";
+        mainConteiner.classList.remove("overlay");
+        mainConteiner.classList.add("main-conteiner");
       }
       // console.log(e.target);
     });

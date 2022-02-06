@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  line-height: 1.8rem;
 }
 h1,
 h2,

@@ -22,6 +22,14 @@
   z-index: 99999;
 }
 
+/* ######Viewport smaller then 345px####### */
+@media (max-width: 23rem) {
+  .hamburger-menu {
+    right: 0.7rem;
+  }
+}
+/* ######################################### */
+
 /* making X from the hamburger nav lines */
 /* ####################NAV############################## */
 .active .line-top {
