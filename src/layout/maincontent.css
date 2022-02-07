@@ -15,7 +15,8 @@ section {
   background-blend-mode: lighten;
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: var(--secendary_color);
+  transition: background 0.5s ease-in-out;
 }
 
 /* ###########################SECTION ONE########################### */
@@ -37,6 +38,17 @@ section {
   letter-spacing: 0.2rem;
   padding: calc(var(--base_padding) * 5) 0;
   font-size: 2rem;
+}
+.phone {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  border: 1px solid var(--nav-border_color);
+  border-radius: 50%;
+  padding: 0.4rem;
+  background: var(--acent_color);
+  position: fixed;
+  z-index: 100;
 }
 
 /* #############################SECTION TWO############################ */
@@ -299,11 +311,11 @@ iframe {
 .main-footer_copy {
   font-size: 0.8rem;
 }
-.footer-contact > p > img {
+.footer-contact > a > img {
   display: inline;
   padding-right: 1rem;
 }
-.footer-contact > p {
+.footer-contact > a {
   font-size: 0.8rem;
 }
 .footer-nav_wrapper > li > a {
