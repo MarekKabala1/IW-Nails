@@ -347,3 +347,35 @@ iframe {
 .footer-nav_wrapper > li > a:hover {
   color: var(--acent_color);
 }
+@media (min-width: 768px) {
+  section {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .section-three,
+  .section-five,
+  .section-seven {
+    max-width: 60%;
+  }
+  .main-footer {
+    min-width: 100%;
+    border-radius: 0;
+  }
+  iframe {
+    height: 31.25em;
+    width: 37.5em;
+    margin-bottom: 0;
+  }
+  .section-one_text {
+    letter-spacing: 0.3rem;
+    padding: calc(var(--base_padding) * 5) 0;
+    font-size: 3rem;
+  }
+  .section-underline_title {
+    margin-top: 7rem;
+  }
+  .secton-two_txt {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+}
