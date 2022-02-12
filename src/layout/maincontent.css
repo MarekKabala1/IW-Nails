@@ -25,7 +25,7 @@ section {
   justify-content: center;
   align-items: flex-start;
   min-width: 100%;
-  min-height: 31.5rem;
+  min-height: 80vh;
   background-image: url(../img&svg/color-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -92,8 +92,8 @@ section {
   grid-template-rows: repeat(2, 1fr);
 }
 .section-three_li {
-  font-size: 1.3rem;
-  padding: 0 calc(var(--base_padding) * 2) var(--base_padding) 0;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  padding: 0 calc(var(--base_padding) * 2) calc(var(--base_padding) * 2) 0;
   cursor: pointer;
 }
 .section-three_li > a {
@@ -215,18 +215,24 @@ section {
   justify-content: center;
   align-items: flex-start;
   min-width: 100%;
-  padding: var(--base_padding);
+  padding: 1rem calc(var(--base_padding) * 1.5);
 }
 .section-five-subtitle-text_conteiner {
   align-items: center;
   justify-content: space-between;
   min-width: 100%;
 }
+.section-five_subtitle {
+  font-size: clamp(0.9rem, 4vw, 1.3rem);
+}
+.section-five_secendsubtitle {
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+}
 .section-five-subtitle_text {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
 }
 .section-five-subtitle_price {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
   font-weight: 800;
 }
 
@@ -355,6 +361,9 @@ iframe {
     max-width: 70%;
     margin: 0 auto;
   }
+  /* .section-one {
+    min-height: 35rem;
+  } */
   .section-three,
   .section-five,
   .section-seven {
@@ -380,6 +389,7 @@ iframe {
   }
   .section-three-servic-li {
     column-gap: 2rem;
+    row-gap: 1rem;
   }
   .section-six-conteiner_text {
     font-size: 1.1rem;
