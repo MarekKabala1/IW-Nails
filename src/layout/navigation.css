@@ -84,6 +84,7 @@
 
 .main-nav_wrapper > li > a {
   color: var(--primary_color);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 .main-nav_wrapper > li > a:hover {
   color: var(--acent_color);
@@ -110,7 +111,6 @@
   }
   .main-nav_wrapper > li > a {
     color: var(--acent_color);
-    font-size: 0.8rem;
     margin-right: calc(var(--base_padding) * 2);
   }
   .hamburger-menu {
