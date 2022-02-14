@@ -32,7 +32,7 @@ const popupPhotos = () => {
 
       // prettier-ignore
       popupPhotoDiv.innerHTML =
-    `<img src="img&svg/service${imgArr}.jpeg">`;
+     `<img src="img&svg/service${imgArr}.jpeg">`;
 
       document.addEventListener("click", (e) => {
         sections.forEach((section) => {
@@ -57,3 +57,16 @@ const popupPhotos = () => {
   });
 };
 popupPhotos();
+
+const sticyHeader = () => {
+  const options = {
+    threshold: 0,
+    rootMargin: "-53px 0px 0px 0px",
+  };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+    });
+  }, options);
+};
+sticyHeader();
