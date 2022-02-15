@@ -271,7 +271,9 @@ li {
   /* justify-content: center; */
   gap: calc(1rem * 5);
   gap: calc(var(--base_padding) * 5);
+
   background: rgba(137, 1, 75, 0.9);
+
   background: var(--nav-border_color);
   opacity: 1;
   min-height: 100%;
@@ -290,7 +292,7 @@ li {
 .main-nav_wrapper > li > a {
   color: rgb(245, 245, 245);
   color: var(--primary_color);
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
 }
 .main-nav_wrapper > li > a:hover {
   color: rgb(0, 104, 193);
@@ -306,7 +308,7 @@ li {
           transform: scale(1.1);
 }
 /* ######################VIEVPORT BIGGER THEN######################### */
-@media (min-width: 768px) {
+@media (min-width: 45rem) {
   .main-nav_wrapper {
     position: relative;
     -webkit-box-orient: horizontal;
@@ -317,7 +319,8 @@ li {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 0.5rem;
-    gap: 1rem;
+    /* gap: 1rem; */
+    gap: clamp(1rem, 4vw, 5rem);
     -webkit-transform: translateX(0);
             transform: translateX(0);
     background-color: rgb(245, 245, 245);
@@ -326,8 +329,8 @@ li {
   .main-nav_wrapper > li > a {
     color: rgba(137, 1, 75, 0.9);
     color: var(--nav-border_color);
-    margin-right: calc(1rem * 2);
-    margin-right: calc(var(--base_padding) * 2);
+    margin-right: calc(1rem * 1);
+    margin-right: calc(var(--base_padding) * 1);
   }
   .hamburger-menu {
     display: none;
@@ -349,7 +352,7 @@ li {
   background: var(--primary_color);
   /* border: 0.5px solid var(--nav-border_color); */
   border-radius: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .logo-wrapper {
   gap: 2rem;
@@ -367,7 +370,7 @@ li {
   height: 3rem;
   padding: 0.3rem auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 45rem) {
   .main-header {
     height: 3.3rem;
     gap: 1rem;
@@ -624,19 +627,6 @@ section {
 .scroll-snap > * {
   scroll-snap-align: start;
 }
-@media (min-width: 63.75rem) {
-  .section-four_gallery {
-    min-height: 400px;
-    max-width: 98vw;
-  }
-  .section-four_photo {
-    height: 350px;
-    min-width: 300px;
-    line-height: 110px;
-    border: 1px solid rgba(137, 1, 75, 0.9);
-    border: 1px solid var(--nav-border_color);
-  }
-}
 /* ##################################SECTION FIVE####################### */
 .section-five {
   -webkit-box-align: center;
@@ -854,7 +844,7 @@ iframe {
   color: var(--acent_color);
 }
 /* ##############################RESPONSIVE SIZE TABLET AND LAPTOP############################# */
-@media (min-width: 768px) {
+@media (min-width: 45rem) {
   section {
     max-width: 70%;
     margin: 0 auto;
@@ -912,5 +902,16 @@ iframe {
   }
   .main-footer_copy {
     letter-spacing: 0.3rem;
+  }
+}
+/* ###############################VIEWPORT BIGGER THEN 1020PX########################## */
+@media (min-width: 63.75rem) {
+  .section-four_gallery {
+    min-height: 400px;
+    max-width: 98vw;
+  }
+  .section-four_photo {
+    height: 350px;
+    min-width: 300px;
   }
 }

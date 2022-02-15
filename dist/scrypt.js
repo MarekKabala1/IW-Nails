@@ -3,12 +3,12 @@ const manu = () => {
   const hamburgerWrapper = document.querySelector("#hamburger-wrapper");
   const hamburger = document.querySelectorAll("#hamburger-wrapper div");
   const navWrapper = document.querySelector("#nav-wrapper");
+  const mainConteiner = document.querySelectorAll("section");
 
   hamburgerWrapper.addEventListener("click", () => {
     navWrapper.classList.toggle("nav-active");
     hamburgerWrapper.classList.toggle("active");
   });
-
   document.addEventListener("click", (e) => {
     if (e.target !== hamburgerWrapper) {
       navWrapper.classList.remove("nav-active");
@@ -58,15 +58,13 @@ const popupPhotos = () => {
 };
 popupPhotos();
 
-const sticyHeader = () => {
-  const options = {
-    threshold: 0,
-    rootMargin: "-53px 0px 0px 0px",
-  };
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-    });
-  }, options);
+const options = {
+  threshold: 0,
+  rootMargin: "-53px 0px -10px 0px",
 };
-sticyHeader();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+  });
+  observer.observe(document.querySelector(".section-one"));
+}, options);

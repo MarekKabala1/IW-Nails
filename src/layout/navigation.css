@@ -71,6 +71,7 @@
   padding-top: 5rem;
   /* justify-content: center; */
   gap: calc(var(--base_padding) * 5);
+
   background: var(--nav-border_color);
   opacity: 1;
   min-height: 100%;
@@ -84,7 +85,7 @@
 
 .main-nav_wrapper > li > a {
   color: var(--primary_color);
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
 }
 .main-nav_wrapper > li > a:hover {
   color: var(--acent_color);
@@ -99,19 +100,20 @@
 
 /* ######################VIEVPORT BIGGER THEN######################### */
 
-@media (min-width: 768px) {
+@media (min-width: 45rem) {
   .main-nav_wrapper {
     position: relative;
     flex-direction: row;
     justify-content: flex-end;
     padding: 0.5rem;
-    gap: 1rem;
+    /* gap: 1rem; */
+    gap: clamp(1rem, 4vw, 5rem);
     transform: translateX(0);
     background-color: var(--primary_color);
   }
   .main-nav_wrapper > li > a {
     color: var(--nav-border_color);
-    margin-right: calc(var(--base_padding) * 2);
+    margin-right: calc(var(--base_padding) * 1);
   }
   .hamburger-menu {
     display: none;

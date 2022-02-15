@@ -183,18 +183,6 @@ section {
 .scroll-snap > * {
   scroll-snap-align: start;
 }
-@media (min-width: 63.75rem) {
-  .section-four_gallery {
-    min-height: 400px;
-    max-width: 98vw;
-  }
-  .section-four_photo {
-    height: 350px;
-    min-width: 300px;
-    line-height: 110px;
-    border: 1px solid var(--nav-border_color);
-  }
-}
 
 /* ##################################SECTION FIVE####################### */
 
@@ -367,7 +355,7 @@ iframe {
 }
 
 /* ##############################RESPONSIVE SIZE TABLET AND LAPTOP############################# */
-@media (min-width: 768px) {
+@media (min-width: 45rem) {
   section {
     max-width: 70%;
     margin: 0 auto;
@@ -422,5 +410,18 @@ iframe {
   }
   .main-footer_copy {
     letter-spacing: 0.3rem;
+  }
+}
+
+/* ###############################VIEWPORT BIGGER THEN 1020PX########################## */
+
+@media (min-width: 63.75rem) {
+  .section-four_gallery {
+    min-height: 400px;
+    max-width: 98vw;
+  }
+  .section-four_photo {
+    height: 350px;
+    min-width: 300px;
   }
 }

@@ -9,7 +9,7 @@
   background: var(--primary_color);
   /* border: 0.5px solid var(--nav-border_color); */
   border-radius: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .logo-wrapper {
   gap: 2rem;
@@ -29,7 +29,7 @@
   padding: 0.3rem auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45rem) {
   .main-header {
     height: 3.3rem;
     gap: 1rem;
