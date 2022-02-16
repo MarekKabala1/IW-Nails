@@ -59,12 +59,19 @@ const popupPhotos = () => {
 popupPhotos();
 
 const options = {
-  threshold: 0,
-  rootMargin: "-53px 0px -10px 0px",
+  threshold: 0.2,
+  rootMargin: "200px 0px 20px 0px",
 };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
+    const scale = entry.target;
+    const rrr = document.querySelector(".main-header");
+    console.log(entry.target, options);
+    if (entry.isIntersecting) {
+      rrr.style.opacity = "0.6";
+    } else {
+      rrr.style.opacity = "1";
+    }
   });
-  observer.observe(document.querySelector(".section-one"));
 }, options);
+observer.observe(document.querySelector(".main-conteiner"));
