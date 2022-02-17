@@ -355,7 +355,7 @@ iframe {
 }
 
 /* ##############################RESPONSIVE SIZE TABLET AND LAPTOP############################# */
-@media (min-width: 45rem) {
+@media (min-width: 44rem) {
   section {
     max-width: 70%;
     margin: 0 auto;
@@ -367,6 +367,7 @@ iframe {
   .section-five,
   .section-seven {
     max-width: 60%;
+    margin-bottom: calc(var(--base_padding) * 3);
   }
   .main-footer {
     min-width: 100%;
@@ -379,7 +380,7 @@ iframe {
   }
   .section-one_text {
     letter-spacing: 0.4rem;
-    padding: calc(var(--base_padding) * 5) 0;
+    padding: calc(var(--base_padding) * 8) 0;
     min-width: 100%;
     text-align: center;
   }

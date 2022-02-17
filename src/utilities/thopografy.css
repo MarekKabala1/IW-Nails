@@ -19,7 +19,7 @@
   left: 0;
 }
 .section-underline_title {
-  margin: clamp(3rem, 10vw, 5rem) 0;
+  margin: calc(var(--base_padding) * 3) 0 clamp(3rem, 10vw, 5rem) 0;
   letter-spacing: 0.5rem;
   position: relative;
   padding-bottom: clamp(0.5rem, 1.5vw, 1.5rem);

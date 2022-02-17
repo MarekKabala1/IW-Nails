@@ -29,7 +29,7 @@
   padding: 0.3rem auto;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 44rem) {
   .main-header {
     height: 3.3rem;
     gap: 1rem;
