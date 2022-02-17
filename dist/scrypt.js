@@ -58,7 +58,7 @@ const popupPhotos = () => {
 };
 popupPhotos();
 
-const headerFade = () => {
+/* const headerFade = () => {
   const options = {
     threshold: 0.15,
     rootMargin: "300px 0px 10px 0px",
@@ -77,4 +77,4 @@ const headerFade = () => {
   }, options);
   observer.observe(document.querySelector(".main-conteiner"));
 };
-headerFade();
+headerFade();*/
