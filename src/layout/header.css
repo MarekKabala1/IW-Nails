@@ -1,46 +1,46 @@
 /* mobile */
 .main-header {
-  position: relative;
-  height: 3.3rem;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  background: var(--primary_color);
-  /* border: 0.5px solid var(--nav-border_color); */
-  border-radius: 2px;
-  /* overflow: hidden; */
+	position: relative;
+	height: 3.3rem;
+	gap: 1rem;
+	align-items: center;
+	padding: 0.5rem;
+	background: var(--primary_color);
+	border-bottom: 0.5px solid var(--nav-border_color);
+	/* overflow: hidden; */
 }
 .logo-wrapper {
-  gap: 2rem;
+	gap: 5rem;
+	flex-shrink: 1;
 }
 @media (max-width: 23rem) {
-  .logo-wrapper {
-    gap: 0.5rem;
-  }
+	.logo-wrapper {
+		gap: 5rem;
+	}
 }
-.company-name img {
-  height: 3.5rem;
-  width: 10rem;
+.company-name > img {
+	height: 3.5rem;
+	width: 10rem;
+	margin-top: 1rem;
 }
 
-.logo img {
-  height: 3rem;
-  padding: 0.3rem auto;
+.logo > img {
+	height: 3rem;
+	margin-top: 1rem;
 }
 
 @media (min-width: 44rem) {
-  .main-header {
-    height: 3.3rem;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0.5rem;
-    background: var(--primary_color);
-    /* border: 0.5px solid var(--nav-border_color); */
-    border-radius: 0;
-    position: fixed;
-    inset: 0;
-    z-index: 200;
-  }
+	.main-header {
+		height: 3.3rem;
+		gap: 5rem;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0.5rem;
+		background: var(--primary_color);
+		/* border: 0.5px solid var(--nav-border_color); */
+		border-radius: 0;
+		position: fixed;
+		inset: 0;
+		z-index: 200;
+	}
 }
