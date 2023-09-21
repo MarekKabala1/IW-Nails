@@ -1,27 +1,29 @@
 .flex-column {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .flex-row {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .flex {
-  display: flex;
+	display: flex;
 }
 .section-underline_title::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background: var(--nav-border_color);
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: var(--nav-border_color);
+	border-radius: 10px;
+	border: 1px solid var(--nav-border_color);
+	bottom: 0;
+	left: 0;
 }
 .section-underline_title {
-  margin: calc(var(--base_padding) * 3) 0 clamp(3rem, 10vw, 5rem) 0;
-  letter-spacing: 0.5rem;
-  position: relative;
-  padding-bottom: clamp(0.5rem, 1.5vw, 1.5rem);
-  font-size: clamp(1.5rem, 4vw, 2.3rem);
+	margin: calc(var(--base_padding) * 3) 0 clamp(3rem, 10vw, 5rem) 0;
+	letter-spacing: 0.5rem;
+	position: relative;
+	padding-bottom: clamp(0.5rem, 1.5vw, 1.5rem);
+	font-size: clamp(1.5rem, 4vw, 2.3rem);
 }

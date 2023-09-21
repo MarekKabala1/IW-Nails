@@ -8,7 +8,7 @@ section {
 }
 .main-conteiner {
 	position: relative;
-	background: rgba(255, 255, 255, 0.9) url('/img&svg/nail-background.jpeg');
+	background: rgba(255, 255, 255, 0.9) url('../img&svg/nail-background.jpeg');
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -26,17 +26,18 @@ section {
 	align-items: flex-start;
 	min-width: 100%;
 	min-height: 80vh;
-	background-image: url('/img&svg/color-background.jpg');
+	background-image: url('../img&svg/color-background.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 1;
-	margin: 0;
+	margin: 0 auto;
 	box-shadow: inset 0px 0px 50px 10px rgba(137, 1, 75, 0.5);
 }
 .section-one_text {
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.5rem;
 	padding: calc(var(--base_padding) * 5) 0;
+	margin: 0 auto;
 	font-size: clamp(2rem, 7vw, 4rem);
 }
 .phone {
@@ -132,7 +133,7 @@ section {
 	margin: -0.7rem 1rem;
 	padding: var(--base_padding);
 	background-size: 2rem 2rem;
-	background-image: url('/img&svg/nail-brush1.svg');
+	background-image: url('../img&svg/nail-brush1.svg');
 	background-repeat: no-repeat;
 }
 
@@ -306,9 +307,6 @@ iframe {
 /* ##############################FOOTER########################################## */
 
 .main-footer {
-	align-items: center;
-	justify-content: center;
-	gap: var(--base_padding);
 	background-color: var(--primary_color);
 	padding: 2rem 0 calc(var(--base_padding) * 2) 0;
 	max-width: 95%;
@@ -316,9 +314,19 @@ iframe {
 	margin: 4rem auto 0 auto;
 	box-shadow: -2px 5px 4px var(--secendary_color);
 }
-.main-footer_socialicon > img {
-	width: 2.1rem;
+.main-footer-wrapper {
+	align-items: center;
+	justify-content: center;
+	gap: calc(var(--base_padding) * 2);
+}
+.main-footer_socialicon > img,
+.main-footer_socialicon > a > img {
+	width: 1rem;
 	aspect-ratio: 1;
+}
+.footer-contact > a > img {
+	display: inline;
+	padding-right: 1rem;
 }
 .main-footer_socialicon {
 	gap: 2rem;
@@ -327,20 +335,16 @@ iframe {
 	gap: 1rem;
 }
 .main-footer_copy {
-	font-size: 0.8rem;
-}
-.footer-contact > a > img {
-	display: inline;
-	padding-right: 1rem;
+	font-size: 0.6rem;
+	letter-spacing: 0.1rem;
 }
 .footer-contact > a {
 	font-size: 0.8rem;
 }
 .footer-nav_wrapper > li > a {
 	color: var(--nav-border_color);
-	font-size: 0.7rem;
-	border: 0.5px solid;
-	border-radius: 2px;
+	font-size: 0.5rem;
+	border-bottom: 0.5px solid;
 	cursor: pointer;
 }
 .footer-nav_wrapper > li:hover {
@@ -393,7 +397,7 @@ iframe {
 	}
 
 	.main-footer_socialicon > img {
-		width: 2.5rem;
+		width: 2rem;
 	}
 	.main-footer_socialicon {
 		gap: 3rem;
