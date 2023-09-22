@@ -58,6 +58,35 @@ const popupPhotos = () => {
 };
 popupPhotos();
 
+document.addEventListener('DOMContentLoaded', function () {
+	const sliderWrapper = document.querySelector('.slider-wrapper_img');
+	const sliderItems = document.querySelectorAll('.section-four_photo');
+	const slideWidth = sliderItems[0].offsetWidth;
+	let currentPosition = 0;
+
+	function slideNext() {
+		currentPosition -= slideWidth;
+		if (currentPosition < -slideWidth * (sliderItems.length - 1)) {
+			currentPosition = 0;
+		}
+		sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
+	}
+
+	function slidePrev() {
+		currentPosition += slideWidth;
+		if (currentPosition > 0) {
+			currentPosition = -slideWidth * (sliderItems.length - 1);
+		}
+		sliderWrapper.style.transform = `translateX(${currentPosition}px )`;
+	}
+
+	const nextButton = document.querySelector('.slider_next');
+	const prevButton = document.querySelector('.slider_prev');
+
+	nextButton?.addEventListener('click', slideNext);
+	prevButton?.addEventListener('click', slidePrev);
+});
+
 /* const headerFade = () => {
   const options = {
     threshold: 0.15,

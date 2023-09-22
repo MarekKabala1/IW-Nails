@@ -138,8 +138,64 @@ section {
 }
 
 /* ###############################SECTON FOUR########################## */
-
 .section-four_gallery {
+	width: 200px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section-four_article {
+	position: relative;
+}
+
+.slider-wrapper_img {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	width: 200px;
+	height: 250px;
+}
+
+.section-four_photo {
+	display: flex;
+	flex: 0 0 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-height: 250px;
+	width: auto;
+}
+
+.slider_next {
+	position: absolute;
+	z-index: 10;
+	font-size: 3rem;
+	right: 1rem;
+	top: 60%;
+	font-weight: 500;
+	color: var(--accent);
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.slider_prev {
+	position: absolute;
+	z-index: 10;
+	font-size: 3rem;
+	left: 1rem;
+	top: 60%;
+	font-weight: 500;
+	color: var(--accent);
+	cursor: pointer;
+	z-index: 1000;
+}
+
+/* .section-four_gallery {
 	gap: calc(var(--base_padding) * 1);
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -179,7 +235,7 @@ section {
 }
 .scroll-snap > * {
 	scroll-snap-align: start;
-}
+} */
 
 /* ##################################SECTION FIVE####################### */
 
