@@ -86,24 +86,3 @@ document.addEventListener('DOMContentLoaded', function () {
 	nextButton?.addEventListener('click', slideNext);
 	prevButton?.addEventListener('click', slidePrev);
 });
-
-/* const headerFade = () => {
-  const options = {
-    threshold: 0.15,
-    rootMargin: "300px 0px 10px 0px",
-  };
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const sectionEntry = entry.target;
-      const header = document.querySelector(".main-header");
-      // console.log(entry.target, sectionEntry);
-      if (entry.isIntersecting) {
-        header.style.opacity = "0.6";
-      } else {
-        header.style.opacity = "1";
-      }
-    });
-  }, options);
-  observer.observe(document.querySelector(".main-conteiner"));
-};
-headerFade();*/
