@@ -8,7 +8,7 @@ section {
 }
 .main-conteiner {
 	position: relative;
-	background: rgba(255, 255, 255, 0.9) url('../img&svg/nail-background.jpeg');
+	background: rgba(255, 255, 255, 0.9) url('../img&svg/nail-background.webp');
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -26,7 +26,7 @@ section {
 	align-items: flex-start;
 	min-width: 100%;
 	min-height: 80vh;
-	background-image: url('../img&svg/color-background.jpg');
+	background-image: url('../img&svg/color-background.webp');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

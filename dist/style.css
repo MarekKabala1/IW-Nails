@@ -355,7 +355,7 @@ li {
 	background: var(--primary_color);
 	border-bottom: 0.5px solid rgba(137, 1, 75, 0.9);
 	border-bottom: 0.5px solid var(--nav-border_color);
-	opacity: 90%;
+	/* opacity: 90%; */
 }
 .logo-wrapper {
 	gap: 5rem;
@@ -414,7 +414,7 @@ section {
 }
 .main-conteiner {
 	position: relative;
-	background: rgba(255, 255, 255, 0.9) url('../img&svg/nail-background.jpeg');
+	background: rgba(255, 255, 255, 0.9) url('../img&svg/nail-background.webp');
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -437,7 +437,7 @@ section {
 	        align-items: flex-start;
 	min-width: 100%;
 	min-height: 80vh;
-	background-image: url('../img&svg/color-background.jpg');
+	background-image: url('../img&svg/color-background.webp');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
